@@ -1861,7 +1861,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>${enforcer.version}</version>
+          <version>[3.0.0,)</version>
           <dependencies>
             <dependency>
               <groupId>org.codehaus.mojo</groupId>
@@ -3054,7 +3054,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-enforcer-plugin</artifactId>
-            <version>${enforcer.version}</version>
+            <version>[3.0.0,)</version>
             <configuration>
               <rules>
                 <enforceBytecodeVersion>
@@ -4923,7 +4923,7 @@
                       <pluginExecutionFilter>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-enforcer-plugin</artifactId>
-                        <versionRange>${enforcer.version}</versionRange>
+                        <versionRange>[3.0.0,)</versionRange>
                         <goals>
                           <goal>enforce</goal>
                         </goals>
