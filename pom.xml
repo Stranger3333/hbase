@@ -698,7 +698,7 @@
     <argLine>${hbase-surefire.argLine}</argLine>
     <jacoco.version>0.7.5.201505241946</jacoco.version>
     <extra.enforcer.version>1.5.1</extra.enforcer.version>
-    <enforcer.version>3.0.0</enforcer.version>
+    <enforcer.version>3.6.3</enforcer.version>
     <restrict-imports.enforcer.version>0.14.0</restrict-imports.enforcer.version>
     <!-- Location of test resources -->
     <test.build.classes>${project.build.directory}/test-classes</test.build.classes>
@@ -1861,7 +1861,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>[3.0.0,)</version>
+          <version>${enforcer.version}</version>
           <dependencies>
             <dependency>
               <groupId>org.codehaus.mojo</groupId>
@@ -3054,7 +3054,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-enforcer-plugin</artifactId>
-            <version>[3.0.0,)</version>
+            <version>${enforcer.version}</version>
             <configuration>
               <rules>
                 <enforceBytecodeVersion>
@@ -4923,7 +4923,7 @@
                       <pluginExecutionFilter>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-enforcer-plugin</artifactId>
-                        <versionRange>[3.0.0,)</versionRange>
+                        <versionRange>${enforcer.version}</versionRange>
                         <goals>
                           <goal>enforce</goal>
                         </goals>
